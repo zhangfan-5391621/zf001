@@ -1,0 +1,133 @@
+uid=1003(sarah) gid=1004(sarah) 组=1004(sarah)
+uid=1002(harry) gid=1003(harry) 组=1003(harry),1001(adminuser)
+spawn ssh harry@127.0.0.1
+harry@127.0.0.1's password: 
+Last login: Wed May 23 14:28:08 2018 from localhost
+[harry@server0 ~]$ touch test.txt
+[harry@server0 ~]$ exit
+登出
+Connection to 127.0.0.1 closed.
+adminuser:!::natasha,harry
+uid=3456(alex) gid=3456(alex) 组=3456(alex)
+spawn ssh alex@127.0.0.1
+alex@127.0.0.1's password: 
+Last login: Wed May 23 14:28:15 2018 from localhost
+[alex@server0 ~]$ touch test.txt
+[alex@server0 ~]$ exit
+登出
+Connection to 127.0.0.1 closed.
+uid=1001(natasha) gid=1002(natasha) 组=1002(natasha),1001(adminuser)
+spawn ssh natasha@127.0.0.1
+natasha@127.0.0.1's password: 
+Last login: Wed May 23 14:28:23 2018 from localhost
+[natasha@server0 ~]$ touch test.txt
+[natasha@server0 ~]$ exit
+登出
+Connection to 127.0.0.1 closed.
+adminuser:!::natasha,harry
+  systemvg    2   1   0 wz--n- 492.00m 192.00m
+  vo       systemvg  -wi-ao---- 300.00m                                             
+  datastore   1   1   0 wz--n- 992.00m 192.00m
+autofs-5.0.7-40.el7.x86_64
+sssd-1.11.2-65.el7.x86_64
+uid=1700(ldapuser0) gid=1700(ldapuser0) 组=1700(ldapuser0)
+
+CHECKING.....................................
+
+********************************************************************************
+
+1、检查主机名
+[1;32;48mHostname check OK ![0m
+
+********************************************************************************
+
+2、检查IP、网关、DNS
+[1;32;48mNetwork configuretion check OK ![0m
+
+********************************************************************************
+
+3、检查YUM仓库
+[1;32;48mYUM check OK ![0m
+
+********************************************************************************
+
+5、检查用户权限
+
+[1;32;48mThe user "sarah" is  found !!!  [0m
+[1;32;48mThe user "sarah" check OK !!!             [0m
+[1;32;48mThe user "harry" is  found !!!  [0m
+4、检查用户密码
+[1;32;48mThe user "harry" password authentication success !!!             [0m
+[1;32;48mFind the file /etc/gshadow[0m
+[1;32;48mThe user "harry"  is belong to the group  "adminuser"[0m
+[1;32;48mThe user "alex" is  found !!!  [0m
+4、检查用户密码
+[1;32;48mThe user "alex" password authentication success !!!             [0m
+[1;32;48mThe user "natasha" is  found !!!  [0m
+4、检查用户密码
+[1;32;48mThe user "natasha" password authentication success !!!             [0m
+[1;32;48mFind the file /etc/gshadow[0m
+[1;32;48mThe user "natasha"  is belong to the group  "adminuser"[0m
+
+********************************************************************************
+
+11、检查逻辑卷、swap
+[1;32;48mVG: "systemvg" check OK ![0m
+[1;32;48mLV: "vo" check OK ![0m
+[1;32;48mVG: "datastore" check OK ![0m
+PE: "PE Size" check OK !!!              
+
+********************************************************************************
+
+12、检查开机挂载
+[1;32;48mMount Point: "/vo" check OK ![0m
+[1;32;48mMount Point: "/mnt/database" check OK !!!  [0m
+[1;32;48mMount Point: "swap" check OK ![0m
+
+********************************************************************************
+
+10、检查内核版本
+3.10.0-123.1.2.el7.x86_64
+[1;32;48mThe KernelVersion  check OK![0m
+
+********************************************************************************
+
+9、检查共享目录
+The dir permission "/home/admins" check ok !!!             
+
+********************************************************************************
+
+13、检查NTP时间同步
+[1;32;48mChronyd is active and enabled, check OK[0m
+
+********************************************************************************
+
+14、检查student用户文件
+[1;31;47mERROR: Can`t find the user student OR the dir "findfiles"!!!                -20[0m
+
+********************************************************************************
+
+15、检查Tar文件
+[1;32;48mFound the file "/root/backup.tar.bz2"[0m
+[1;32;48mThe file "/root/backup.tar.bz2" is ok[0m
+
+********************************************************************************
+
+16、检查字符串
+[1;32;48mFound the file "/root/wordlist"[0m
+[1;32;48mStrings check OK[0m
+
+********************************************************************************
+
+17、检查ldap、autofs
+[1;32;48mautofs is active and enabled, check OK[0m
+[1;32;48msssd is active and enabled, check OK[0m
+ldapuser0 check Ok      
+
+The last score: [1;31;44m280[0m
+
+[1;32;48mMORE Infomations at URL http://bj.ne.tedu.cn/ [0m
+[1;32;48m                    URL http://bj.linux.tedu.cn/ [0m
+[1;32;48mAUTHOR: YANGJF       [0m
+[1;32;48mTIME  : 2017-11-25   [0m
+[1;32;48mVERSION: 2.4[0m
