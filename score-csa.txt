@@ -2,28 +2,34 @@ uid=1003(sarah) gid=1004(sarah) 组=1004(sarah)
 uid=1002(harry) gid=1003(harry) 组=1003(harry),1001(adminuser)
 spawn ssh harry@127.0.0.1
 harry@127.0.0.1's password: 
-Last login: Wed May 23 14:28:08 2018 from localhost
+Last login: Wed May 23 14:28:08 2018 from localhost
+
 [harry@server0 ~]$ touch test.txt
 [harry@server0 ~]$ exit
 登出
-Connection to 127.0.0.1 closed.
+Connection to 127.0.0.1 closed.
+
 adminuser:!::natasha,harry
 uid=3456(alex) gid=3456(alex) 组=3456(alex)
 spawn ssh alex@127.0.0.1
 alex@127.0.0.1's password: 
-Last login: Wed May 23 14:28:15 2018 from localhost
+Last login: Wed May 23 14:28:15 2018 from localhost
+
 [alex@server0 ~]$ touch test.txt
 [alex@server0 ~]$ exit
 登出
-Connection to 127.0.0.1 closed.
+Connection to 127.0.0.1 closed.
+
 uid=1001(natasha) gid=1002(natasha) 组=1002(natasha),1001(adminuser)
 spawn ssh natasha@127.0.0.1
 natasha@127.0.0.1's password: 
-Last login: Wed May 23 14:28:23 2018 from localhost
+Last login: Wed May 23 14:28:23 2018 from localhost
+
 [natasha@server0 ~]$ touch test.txt
 [natasha@server0 ~]$ exit
 登出
-Connection to 127.0.0.1 closed.
+Connection to 127.0.0.1 closed.
+
 adminuser:!::natasha,harry
   systemvg    2   1   0 wz--n- 492.00m 192.00m
   vo       systemvg  -wi-ao---- 300.00m                                             
@@ -124,7 +130,7 @@ The dir permission "/home/admins" check ok !!!
 [1;32;48msssd is active and enabled, check OK[0m
 ldapuser0 check Ok      
 
-The last score: [1;31;44m280[0m
+最后得分： [1; 31; 44m280 x xxxx[0m
 
 [1;32;48mMORE Infomations at URL http://bj.ne.tedu.cn/ [0m
 [1;32;48m                    URL http://bj.linux.tedu.cn/ [0m
